@@ -263,9 +263,9 @@
 
   /* ---------- why octagon ---------- */
   .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;}
-  .why-grid .n{font-family:'IBM Plex Mono',monospace;color:var(--gold);font-size:13px;margin-bottom:16px;display:block;}
-  .why-grid h3{font-size:20px;margin-bottom:12px;}
-  .why-grid p{color:#3A4150;font-size:15px;}
+  .why-grid .n{font-family:'IBM Plex Mono',monospace;color:#ffffff;font-size:13px;margin-bottom:16px;display:block;}
+  .why-grid h3{font-size:22px;margin-bottom:12px;}
+  .why-grid p{color:#ffffff;font-size:15px;}
 
   /* ---------- contact ---------- */
   .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;}
