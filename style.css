@@ -248,7 +248,8 @@
      background-image:
       url('images/pattern-bg-0.png');
     background-size:cover;background-position:center;background-repeat:no-repeat; 
-  }
+  } 
+  
 
 
 
@@ -345,8 +346,7 @@
   .contact-list div{padding:18px 0;border-top:1px solid #DCD7C9;display:flex;justify-content:space-between;}
   .contact-list div:last-child{border-bottom:1px solid #DCD7C9;}
   .contact-list .k{font-size:12px;text-transform:uppercase;color:var(--steel);letter-spacing:0.05em;}
-  .contact-list .v{font-family:'IBM Plex Mono',monospace;font-size:14px;}
-
+  .contact-list .v{font-family:'IBM Plex Mono',monospace;font-size:14px; text-align:right;}
   /* ---------- footer ---------- */
   footer{background:#00219a; color:#f8f9fa;padding:48px 0 32px;}
   .footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;}
