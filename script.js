@@ -1,9 +1,28 @@
   const burger = document.querySelector('.burger');
   const navLinks = document.querySelector('.nav-links');
+  
   burger.addEventListener('click', () => {
-    const open = navLinks.style.display === 'flex';
-    navLinks.style.display = open ? 'none' : 'flex';
-    navLinks.style.cssText += open ? '' : 'position:fixed;top:66px;left:0;right:0;background:#0B1B33;flex-direction:column;padding:24px 32px;gap:18px;border-bottom:1px solid #2A4468;';
+    const isOpen = navLinks.classList.toggle('mobile-open');
+    burger.classList.toggle('active', isOpen);
+    burger.setAttribute('aria-expanded', isOpen);
+  });
+  
+  // Close mobile menu when a nav link is clicked
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('mobile-open');
+      burger.classList.remove('active');
+      burger.setAttribute('aria-expanded', false);
+    });
+  });
+  
+  // Close menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('nav') && navLinks.classList.contains('mobile-open')) {
+      navLinks.classList.remove('mobile-open');
+      burger.classList.remove('active');
+      burger.setAttribute('aria-expanded', false);
+    }
   });
 
   const revealEls = document.querySelectorAll('.reveal');

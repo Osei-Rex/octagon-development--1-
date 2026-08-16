@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Octagon Development Limited</title>
+<link rel="icon" type="image/x-icon" href="/images/favicon-01.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -13,8 +14,9 @@
 <nav>
   <div class="nav-inner">
     <div class="logo">
-      <div class="logo-mark"><img src="images/logo-landscape.png" alt="Octagon Development logo" style="height:50px;width:auto;display:block;"></div>
-      <!-- <div class="logo-text">Octagon<span>Development Ltd.</span></div> -->
+      <div class="logo-mark">
+        <img src="images/logo-landscape.png" alt="Octagon Development logo">
+      </div>
     </div>
     <div class="nav-links">
       <a href="#overview">Overview</a>
@@ -23,8 +25,13 @@
       <a href="#why">Why Octagon</a>
       <a href="#contact" class="nav-cta">Contact</a>
     </div>
-    <button class="burger">☰</button>
+    <button class="burger" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </div>
+</nav>
 </nav>
 
 <header class="hero sheet">
@@ -126,22 +133,23 @@ executing complex projects with precision, innovation, and integrity.</p>
       </div>
     </div>
 
-    <div class="project-card reveal">
+     <div class="project-card reveal">
       <div class="project-visual">
-        <img src="images/project-2.png" alt="Project blueprint drawing" class="project-img">
+        <img src="images/project-1.png" alt="Project blueprint drawing" class="project-img">
         <div class="octagon-wm"><div></div></div>
       </div>
       <div class="project-body">
-        <div class="tag">PROCUREMENT</div>
-        <h3>Sourcing & Supply</h3>
-        <p>[Placeholder] Rehabilitation and widening of the coastal highway, including drainage and bridge strengthening works.</p>
+        <div class="tag">CONSTRUCTION</div>
+        <h3>Execution & Delivery</h3>
+        <p>[Placeholder] Delivery of bulk utilities (power, water, wastewater) and internal access roads for a new industrial park development.</p>
         <div class="project-meta">
-          <div><span class="k">Sector</span><span class="v">Transport</span></div>
-          <div><span class="k">Scope</span><span class="v">Construction</span></div>
-          <div><span class="k">Status</span><span class="v">Ongoing</span></div>
+          <div><span class="k">Sector</span><span class="v">Industrial</span></div>
+          <div><span class="k">Scope</span><span class="v">EPC</span></div>
+          <div><span class="k">Status</span><span class="v">Planned</span></div>
         </div>
       </div>
     </div>
+
 
     <div class="project-card reveal">
       <div class="project-visual">
@@ -213,7 +221,7 @@ executing complex projects with precision, innovation, and integrity.</p>
   <div class="wrap">
     <div class="footer-inner">
       <div class="logo">
-        <img src="images/logo-landscape.png" alt="Octagon Development logo" style="height:60px;width:auto;display:block;">
+        <img src="images/logo-landscape.png" alt="Octagon Development logo">
       </div>
       <div class="footer-links">
         <a href="#overview">Overview</a>
